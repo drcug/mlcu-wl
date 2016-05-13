@@ -19,6 +19,7 @@
     <style>
         h1 {
             font-family: 'Lobster';
+            text-shadow: 2px 2px 4px #000000;
             color: #fff;
         }
         body {
