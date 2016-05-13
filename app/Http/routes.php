@@ -13,3 +13,4 @@
 
 Route::get('/', 'DonationController@index');
 Route::post('/donation', 'DonationController@store');
+Route::get('/thanks/{id}', 'DonationController@thanks');

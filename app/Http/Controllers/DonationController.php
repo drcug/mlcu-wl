@@ -34,8 +34,15 @@ class DonationController extends Controller
         $donation->email = $request->email;
         $donation->comment = $request->comment;
         $donation->save();
-    
-        
-        return redirect('/');
+        return redirect()->action('DonationController@thanks', $donation);
+
     }
+    
+    public function thanks($donationId) {
+        $donation = Donation::find($donationId);
+        return view('thanks', [
+        'donation' => $donation
+        ]);
+    }
+
 }
