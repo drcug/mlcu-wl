@@ -48,6 +48,11 @@
             background-color: rgba(0,0,0,0.6);
             border: 10px solid transparent;
         }
+        .iban {
+            border-radius: 10px;
+            background-color: rgba(30,30,100,0.8);
+            border: 10px solid transparent;
+        }
         
 
         
