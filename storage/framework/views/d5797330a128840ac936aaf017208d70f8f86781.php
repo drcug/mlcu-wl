@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
-<div class="modal fade" tabindex="-1" id="formModal" role="dialog">
+<div class="modal" tabindex="-1" id="formModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
         <form action="<?php echo e(url('donation')); ?>" method="POST" class="form-horizontal">
@@ -16,11 +16,11 @@
         <?php echo $__env->make('common.errors', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 <input type="hidden" name="gift_id" id="gift_id" id="donation-gift_id" class="form-control">
                 <label for="donation-amount" class="col-sm-3 control-label">Contributo</label>
-                <input type="number" name="amount" id="donation-amount" class="form-control">
+                <input type="number" name="amount" id="donation-amount" class="form-control" required>
                 <label for="donation-donor" class="col-sm-3 control-label">Il tuo nome</label>
-                <input type="text" name="donor" id="donation-donor" class="form-control">
+                <input type="text" name="donor" id="donation-donor" class="form-control" required>
                  <label for="donation-email" class="col-sm-3 control-label">La tua email</label>
-                <input type="text" name="email" id="donation-email" class="form-control">
+                <input type="text" name="email" id="donation-email" class="form-control" required pattern=".+@.+\..{2,6}">
                 <label for="donation-comment" class="col-sm-3 control-label">Commento</label>
                 <textarea name="comment" id="donation-comment" class="form-control"> </textarea>
       </div>
@@ -112,6 +112,11 @@ foreach ($donations as $donation)
 </div>
 </div>
 <script>
+$(window).bind("pageshow", function(event) {
+if (event.originalEvent.persisted) {
+location.reload();
+}
+});
       $(document).ready(function(){
        $(".contr").click(function(){
          $("#gift_id").val($(this).attr('data-id')); 

@@ -23,9 +23,7 @@ class DonationController extends Controller
     
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'amount' => 'required|min:1',
-        ]);
+
         
         $donation = new Donation;
         $donation->gift_id = $request->gift_id;
