@@ -11,9 +11,9 @@
 
 <div class="container"> 
 <div class="thumb">
-  <h4>Ti ringraziamo per il tuo contributo.</h4>
+  <h4>Grazie mille, {{$donation->donor}}!</h4>
   <p>
-    Per concludere il tuo regalo, devi effettuare un bonifico della cifra di {{$donation->amount}} € al seguente iban:
+    Ora che hai prenotato il regalo, non ti resta che effettuare un bonifico della cifra di {{$donation->amount}} € al seguente iban:
   </p>
   <h4 class"text-center">BE1234567890</h4>
 </div>

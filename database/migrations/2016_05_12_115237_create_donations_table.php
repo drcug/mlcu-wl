@@ -19,6 +19,7 @@ class CreateDonationsTable extends Migration
             $table->string('donor');
             $table->string('email');
             $table->longtext('comment');
+            $table->string('uuid');
             $table->timestamps();
             $table->foreign('gift_id')->references('id')->on('gifts');
         });

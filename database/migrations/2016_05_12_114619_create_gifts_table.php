@@ -19,6 +19,7 @@ class CreateGiftsTable extends Migration
             $table->string('photo');
             $table->integer('price');
             $table->integer('sort');
+            $table->boolean('whole');
             $table->timestamps();
         });
     }

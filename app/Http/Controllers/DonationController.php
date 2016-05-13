@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Mail;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -33,13 +33,21 @@ class DonationController extends Controller
         $donation->donor = $request->donor;
         $donation->email = $request->email;
         $donation->comment = $request->comment;
+        $donation->uuid = uniqid($donation->email,true); 
         $donation->save();
-        return redirect()->action('DonationController@thanks', $donation);
+        return redirect()->action('DonationController@thanks', $donation->uuid);
 
     }
     
     public function thanks($donationId) {
-        $donation = Donation::find($donationId);
+        $donation = Donation::where('uuid',$donationId)->first();
+
+        Mail::send('mail', ['donation' => $donation], function ($message) use ($donation) {
+            $subject = "Grazie, ". $donation->donor . "!";
+            $recipient = $donation->email;
+            $message->from('mlcuwedding0903@gmail.com', 'Maria Luisa e Carlo Umberto');
+            $message->to($recipient)->subject($subject);
+        });
         return view('thanks', [
         'donation' => $donation
         ]);

@@ -82,11 +82,22 @@ foreach ($donations as $donation)
     }
     else
     {
-    ?>
-    <button type="button" class="btn btn-primary btn-sm fired" data-toggle="modal" data-id="<?php echo e($gift->id); ?>" data-max="<?php echo e(($gift->price - $total)); ?>">
+      if ($gift->whole)
+      {
+?>
+    <button type="button" class="btn btn-primary btn-sm fired gift" data-toggle="modal" data-id="<?php echo e($gift->id); ?>" data-max="<?php echo e(($gift->price - $total)); ?>">
       Regalo
     </button>
+<?php
+      }
+      else 
+      {
+    ?>
+    <button type="button" class="btn btn-primary btn-sm fired contr" data-toggle="modal" data-id="<?php echo e($gift->id); ?>" data-max="<?php echo e(($gift->price - $total)); ?>">
+      Contributo
+    </button>
     <?php
+      }
     }
     ?>
     <p>&nbsp;</p>
@@ -102,9 +113,16 @@ foreach ($donations as $donation)
 </div>
 <script>
       $(document).ready(function(){
-       $(".fired").click(function(){
+       $(".contr").click(function(){
          $("#gift_id").val($(this).attr('data-id')); 
          $("#donation-amount").attr("max",$(this).attr('data-max')); 
+         $("#donation-amount").removeAttr("disabled");
+         $('#formModal').modal('show');
+       });
+        $(".gift").click(function(){
+         $("#gift_id").val($(this).attr('data-id')); 
+         $("#donation-amount").val($(this).attr('data-max')); 
+         $("#donation-amount").attr("disabled", "disabled"); 
          $('#formModal').modal('show');
        });
     });
