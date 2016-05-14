@@ -21,13 +21,13 @@
 <div class="row">
   <div class="col-sm-5 text-center">
   <h6>Carlo Umberto</h6>
-  <p><img src="/imgs/mailcug.png" /></p>
+  <p><img src="/imgs/mailcug.png" class="img-responsive" /></p>
 </div>
 
 <div class="col-sm-1">&nbsp;</div>
   <div class="col-sm-5 text-center">
   <h6>Maria Luisa</h6>
-  <p><img src="/imgs/mailml.png" /></p>
+  <p><img src="/imgs/mailml.png" class="img-responsive" /></p>
   </div>
 </div>
 <div class="row">
