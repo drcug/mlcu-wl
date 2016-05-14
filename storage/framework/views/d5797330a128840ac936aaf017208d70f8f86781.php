@@ -112,11 +112,14 @@ foreach ($donations as $donation)
 </div>
 </div>
 <script>
-$(window).bind("pageshow", function(event) {
-if (event.originalEvent.persisted) {
-location.reload();
-}
-});
+window.onpageshow = function(evt) {
+    // If persisted then it is in the page cache, force a reload of the page.
+    if (evt.persisted) {
+        document.body.style.display = "none";
+        location.reload();
+    }
+};
+
       $(document).ready(function(){
        $(".contr").click(function(){
          $("#gift_id").val($(this).attr('data-id')); 

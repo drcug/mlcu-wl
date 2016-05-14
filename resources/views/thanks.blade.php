@@ -48,8 +48,14 @@
   <p>Hai ulteriori dubbi? Hai sbagliato da qualche parte e vorresti correggere?</p>
   <p>
     <a class="btn btn-default" href="/public/contact">Contatta gli sposi!</a>
+    <a class="btn btn-default" href="/public">Torna alla lista</a>
   </p>
 </div>
 </div>
 <br/>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
 @endsection

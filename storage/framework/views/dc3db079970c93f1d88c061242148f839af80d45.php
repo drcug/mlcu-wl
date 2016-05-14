@@ -2,7 +2,7 @@
  <script>$('#formModal').modal('show');</script>
     <!-- Form Error List -->
     <div class="alert alert-danger">
-        <strong>Whoops! Something went wrong!</strong>
+        <strong>Errore!</strong>
 
         <br><br>
 
