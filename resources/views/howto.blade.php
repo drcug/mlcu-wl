@@ -8,11 +8,13 @@
             color: #fff;
         }</style>
 
-<p>&nbsp;</p>
+
+<p>&nbsp;</p><p>&nbsp;</p>
 <div class="row-fluid">
+<p align="center"><img src="/imgs/mlcu3.jpg" class="img-circle img-responsive" style="max-height:150px"/>  </p>
 <h1 class="text-center" style="font-size:400%">Come funziona / How it works</h1>
 </div>
-<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
 
 <div class="container thumb"> 
   <div class="col-sm-5">

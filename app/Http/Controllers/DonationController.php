@@ -23,10 +23,12 @@ class DonationController extends Controller
     
     public function howto(Request $request)
     {
-    
+     return view('howto');
+    }
 
-    return view('howto');
-
+    public function contact(Request $request)
+    {
+     return view('contact');
     }
     
     public function store(Request $request)
@@ -47,13 +49,13 @@ class DonationController extends Controller
     
     public function thanks($donationId) {
         $donation = Donation::where('uuid',$donationId)->first();
-
+/*
         Mail::send('mail', ['donation' => $donation], function ($message) use ($donation) {
             $subject = "Grazie, ". $donation->donor . "!";
             $recipient = $donation->email;
             $message->from('mlcuwedding0903@gmail.com', 'Maria Luisa e Carlo Umberto');
             $message->to($recipient)->subject($subject);
-        });
+        });*/
         return view('thanks', [
         'donation' => $donation
         ]);
