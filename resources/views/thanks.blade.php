@@ -2,17 +2,14 @@
 
 @section('content')
 
-<p>&nbsp;</p>
-<div class="row-fluid">
-<h1 class="text-center" style="font-size:400%">Grazie!</h1>
-</div>
-<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+
 
 <div class="container"> 
 <div class="thumb text-center">
   <h3>Grazie mille, {{$donation->donor}}!</h3>
   <p>Il tuo contributo è di {{$donation->amount}} € per il seguente regalo:</p>
-  <img src="/imgs/{{$donation->gift->photo}}" class="img-thumbnail img-responsive" style="max-height:100px"/>
+  <img src="/imgs/gifts/{{$donation->gift->photo}}" class="img-thumbnail img-responsive" style="max-height:100px"/>
   <h4>{{$donation->gift->name}}</h4>
 
   <div class = "col-sm-2">&nbsp;</div>
@@ -23,7 +20,7 @@
     </div>    
     <div class = "row">
     <div class="col-sm-6">IBAN:</div>
-    <div class="col-sm-6">BE60733056254370</div>
+    <div class="col-sm-6">BE60 7330 5625 4370</div>
     </div>
     <div class = "row">
     <div class="col-sm-6">BIC/SWIFT:</div>
@@ -31,7 +28,7 @@
     </div>    
     <div class = "row">
     <div class="col-sm-6">Intestatario:</div>
-    <div class="col-sm-6">Maria Luisa Francesca Libardi</div>
+    <div class="col-sm-6">Libardi Maria Luisa Franc.</div>
     </div>        
     <div class = "row">
     <div class="col-sm-6">Comunicazione:</div>
@@ -52,7 +49,12 @@
   </p>
 </div>
 </div>
-<br/>
+<p>&nbsp;</p><p>&nbsp;</p>
+<div class="row-fluid">
+<p align="center"><img src="/imgs/mlcu4.jpg" class="img-circle img-responsive" style="max-height:150px"/>  </p>
+<h1 class="text-center" style="font-size:400%">Grazie!</h1>
+</div>
+<p>&nbsp;</p><p>&nbsp;</p>
 <script>
 window.location.hash="no-back-button";
 window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history

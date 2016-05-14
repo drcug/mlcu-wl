@@ -10,7 +10,7 @@
                         
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Donazione...</h4>
+        <h4 class="modal-title">I tuoi dati</h4>
       </div>
 
       <div class="modal-body">
@@ -27,7 +27,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>
-        <button type="submit" class="btn btn-primary">Invia regalo</button>
+        <button type="submit" class="btn btn-primary">Invia</button>
       </div>
       </form>
     </div><!-- /.modal-content -->
@@ -41,17 +41,31 @@
 <p>&nbsp;</p><p>&nbsp;</p>
 <!--- inizio accrocchio --->
 <div class="container"> 
-<div class="row">
-  
+
+<?php
+ $count = 0;
+?>
+
 @foreach ($gifts as $gift)
+<?php
+
+ if ($count % 3 == 0) { echo "<div class=\"row\">"; }
+?>
 <div class="col-sm-4">
     <div class="text-center thumb">
 <h4>{{$gift->name}}</h4>
 <p align="center">
-  <img src="/imgs/{{$gift->photo}}" class="img-thumbnail img-responsive" style="max-height:236px"/>
+  <img src="/imgs/gifts/{{$gift->photo}}" class="img-thumbnail img-responsive" style="height:235px"/>
 </p>
 <p>
-  {{$gift->desc}}
+  {{$gift->desc}} 
+  <?php if ($gift->url != "")
+    {
+  ?>
+  <a href="{{$gift->url}}" target="_blank">Puoi vedere il regalo cliccando qui.</a>
+  <?php
+     }
+  ?>
 </p>
 
 <?php
@@ -106,7 +120,11 @@ foreach ($donations as $donation)
     
 </div>
 
+<?php
 
+ if ($count % 3 == 2) { echo "</div>"; }
+ $count++;
+?>
 <!--- fine accrocchio --->
 @endforeach
 </div>

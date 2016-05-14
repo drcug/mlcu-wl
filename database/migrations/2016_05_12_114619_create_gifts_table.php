@@ -17,6 +17,7 @@ class CreateGiftsTable extends Migration
             $table->string('name');
             $table->longtext('desc');
             $table->string('photo');
+            $table->string('url')->nullable();
             $table->integer('price');
             $table->integer('sort');
             $table->boolean('whole');

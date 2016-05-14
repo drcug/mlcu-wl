@@ -43,25 +43,19 @@ class DonationController extends Controller
         $donation->comment = $request->comment;
         $donation->uuid = uniqid($donation->email,true); 
         $donation->save();
-        return redirect()->action('DonationController@thanks', $donation->uuid);
-
-    }
-    
-    public function thanks($donationId) {
-        $donation = Donation::where('uuid',$donationId)->first();
-
         
+                
             $res = "";
         $subject = "Grazie, ". $donation->donor . "!";
         
         $html_content = "<html><h3>Grazie mille, ". $donation->donor ." ! </h3></html>";
-        $html_content .= "<br/><p>Il tuo contributo è di ".$donation->amount." &euro; per il seguente regalo:</p>";
-        $html_content .= "<p><b>".$donation->gift->name.".</b></p>";
-        $html_content .= "<br/><p>Il tuo commento è: ".$donation->comment.".</p>";
+        $html_content .= "<br/><p>Il tuo contributo è di ".$donation->amount." &euro; per il seguente regalo: ";
+        $html_content .= "<b>".$donation->gift->name."</b>.</p>";
+        $html_content .= "<p>Il tuo commento è: <i>".$donation->comment."</i> </p>";
         $html_content .= "<p>Ecco le coordinate bancarie a cui inviare il bonifico:</p>";
-        $html_content .= "<br/><p><b>IBAN: BE60733056254370</b>";
+        $html_content .= "<p><b>IBAN: BE60 7330 5625 4370</b>";
         $html_content .= "<br/><b>BIC/SWIFT: KREDBEBB</b>";
-        $html_content .= "<br/><b>Intestatario: Maria Luisa Francesca Libardi</b>";
+        $html_content .= "<br/><b>Intestatario: Libardi Maria Luisa Franc.</b>";
         $html_content .= "<br/><b>Comunicazione: Lista Nozze - ".$donation->gift->name."</b>";
         $html_content .= "<br/><br/><b>Ammontare bonifico: ".$donation->amount." &euro; </b></p>";
         $html_content .= "<br/><p>Grazie di cuore per il tuo sostegno!</p>";
@@ -90,6 +84,15 @@ class DonationController extends Controller
           fclose($fp);
         }
         
+        
+        return redirect()->action('DonationController@thanks', $donation->uuid);
+
+    }
+    
+    public function thanks($donationId) {
+        $donation = Donation::where('uuid',$donationId)->first();
+
+
         
         return view('thanks', [
         'donation' => $donation
