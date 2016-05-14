@@ -14,3 +14,4 @@
 Route::get('/', 'DonationController@index');
 Route::post('/donation', 'DonationController@store');
 Route::get('/thanks/{uuid}', 'DonationController@thanks');
+Route::get('/howto', 'DonationController@howto');

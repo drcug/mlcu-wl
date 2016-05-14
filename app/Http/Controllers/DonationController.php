@@ -21,6 +21,14 @@ class DonationController extends Controller
 
     }
     
+    public function howto(Request $request)
+    {
+    
+
+    return view('howto');
+
+    }
+    
     public function store(Request $request)
     {
 

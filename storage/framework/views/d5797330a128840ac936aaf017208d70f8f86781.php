@@ -121,13 +121,13 @@ location.reload();
        $(".contr").click(function(){
          $("#gift_id").val($(this).attr('data-id')); 
          $("#donation-amount").attr("max",$(this).attr('data-max')); 
-         $("#donation-amount").removeAttr("disabled");
+         $("#donation-amount").prop("readonly", false);
          $('#formModal').modal('show');
        });
         $(".gift").click(function(){
          $("#gift_id").val($(this).attr('data-id')); 
-         $("#donation-amount").val($(this).attr('data-max')); 
-         $("#donation-amount").attr("disabled", "disabled"); 
+         $("#donation-amount").val( $(this).attr('data-max') ); 
+         $("#donation-amount").prop("readonly", true); 
          $('#formModal').modal('show');
        });
     });

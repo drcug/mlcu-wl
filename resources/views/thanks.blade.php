@@ -35,7 +35,7 @@
     </div>        
     <div class = "row">
     <div class="col-sm-6">Comunicazione:</div>
-    <div class="col-sm-6">Lista Nozze</div>
+    <div class="col-sm-6">Lista Nozze - {{$donation->gift->name}}</div>
     </div>            
   </div>
   <div class = "col-sm-2">&nbsp;</div>
