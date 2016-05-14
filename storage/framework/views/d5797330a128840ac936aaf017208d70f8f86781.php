@@ -35,7 +35,7 @@
 <p>&nbsp;</p><p>&nbsp;</p>
 <div class="row-fluid">
 <p align="center"><img src="/imgs/mlcu.jpg" class="img-circle img-responsive" style="max-height:150px"/>  </p>
-<h1 class="text-center" style="font-size:400%">Lista nozze Carlo Umberto e Maria Luisa</h1>
+<h1 class="text-center" style="font-size:400%">Lista nozze di Carlo Umberto e Maria Luisa</h1>
 </div>
 <p>&nbsp;</p><p>&nbsp;</p>
 <!--- inizio accrocchio --->

@@ -13,7 +13,7 @@ class GiftsTableSeeder extends Seeder
     {
         DB::table('gifts')->insert([
             'name' => 'Vaporetto Kaercher Dampfreiniger SC 3',
-            'desc' => 'Aiutate Carlo Umberto e Maria Luisa a tenere pulita la loro casa!',
+            'desc' => 'Aiutaci a tenere pulita la nostra casa!',
             'photo' => 'vaporetto.jpg',
             'url' => 'https://www.kaercher.com/de/home-garden/dampfreiniger/sc-3-15130000.html',
             'sort' => '1',
@@ -30,7 +30,7 @@ class GiftsTableSeeder extends Seeder
         ]);
         DB::table('gifts')->insert([
             'name' => 'Coltello Global G20',
-            'desc' => 'Aiutateci nei nostri esperimenti culinari!',
+            'desc' => 'Aiutaci nei nostri esperimenti culinari!',
             'photo' => 'coltello.jpg',
             'sort' => '1',
             'url' => 'http://houseofknives.ca/global-g20-fillet-21cm-8-g-20/',
@@ -39,7 +39,7 @@ class GiftsTableSeeder extends Seeder
         ]);
         DB::table('gifts')->insert([
             'name' => 'Contributo Cose di Casa',
-            'desc' => 'Tutto quello che ci serve per la casa. Mobili, piatti, bicchieri etc.',
+            'desc' => 'Aiutaci a comprare tutto quello che ci serve per la casa. Mobili, lampadari, piatti, bicchieri etc.',
             'photo' => 'arredamento.jpg',
             'sort' => '1',
             'whole' => false,
@@ -47,7 +47,7 @@ class GiftsTableSeeder extends Seeder
         ]);
         DB::table('gifts')->insert([
             'name' => 'Contributo viaggio di nozze',
-            'desc' => 'Saremo un po\' stanchini dopo il 3 settembre, aiutateci a fare un bel viaggio per riposarci!',
+            'desc' => 'Saremo un po\' stanchini dopo il 3 settembre, un bel viaggio è quello che ci vuole per riposarci!',
             'photo' => 'viaggio.jpg',
             'sort' => '1',
             'whole' => false,
@@ -55,7 +55,7 @@ class GiftsTableSeeder extends Seeder
         ]);     
         DB::table('gifts')->insert([
             'name' => 'Pinze da cucina',
-            'desc' => 'Aiutateci nei nostri esperimenti culinari!',
+            'desc' => 'Aiutaci nei nostri esperimenti culinari!',
             'photo' => 'pinze.jpg',
             'sort' => '1',
             'whole' => true,
@@ -63,7 +63,7 @@ class GiftsTableSeeder extends Seeder
         ]);
         DB::table('gifts')->insert([
             'name' => 'Mobile da stiro Foppapedretti Stir8',
-            'desc' => 'Aiutateci ad andare al lavoro con i vestiti ben stirati tenendo la casa in ordine!',
+            'desc' => 'Aiutaci ad andare al lavoro con i vestiti ben stirati tenendo la casa in ordine!',
             'photo' => 'stiro.jpg',
             'sort' => '1',
             'whole' => true,
@@ -72,7 +72,7 @@ class GiftsTableSeeder extends Seeder
         ]);   
         DB::table('gifts')->insert([
             'name' => 'Affettatrice Ritter Duo-Plus E 16',
-            'desc' => 'Aiutateci nei nostri esperimenti culinari, soprattutto con mortadella e speck!',
+            'desc' => 'Per i nostri esperimenti culinari, soprattutto con mortadella e speck!',
             'photo' => 'affettatrice.jpg',
             'sort' => '1',
             'url'  => 'http://www.amazon.it/gp/product/B000KPW5TY/ref=as_li_ss_tl?ie=UTF8&camp=3370&creative=24114&creativeASIN=B000KPW5TY&linkCode=as2',
