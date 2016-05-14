@@ -42,9 +42,8 @@
   <br/>
   <p>Una mail ti è appena stata inviata a {{$donation->email}} con questi dati. Se non dovessi trovarla, cercala nella cartella "Posta Indesiderata".
   </p>
-  <p>Hai ulteriori dubbi? Hai sbagliato da qualche parte e vorresti correggere?</p>
+  <p>Hai ulteriori dubbi? Hai sbagliato da qualche parte e vorresti correggere? <a href="/public/contact">Contatta gli sposi!</a></p>
   <p>
-    <a class="btn btn-default" href="/public/contact">Contatta gli sposi!</a>
     <a class="btn btn-default" href="/public">Torna alla lista</a>
   </p>
 </div>

@@ -11,8 +11,8 @@
 
 <p>&nbsp;</p><p>&nbsp;</p>
 <div class="row-fluid">
-<p align="center"><img src="/imgs/mlcu3.jpg" class="img-circle img-responsive" style="max-height:150px"/>  </p>
-<h1 class="text-center" style="font-size:400%">Come funziona / How it works</h1>
+<p align="center"><img src="/imgs/mlcu3.jpg" class="img-circle img-responsive" style="max-height:150px"/></p>
+<h1 class="col-sm-6 text-center" style="font-size:400%">Come funziona</h1><h1 class="col-sm-6 text-center" style="font-size:400%">How it works</h1>
 </div>
 <p>&nbsp;</p><p>&nbsp;</p>
 
@@ -57,11 +57,11 @@ Un grazie di cuore a tutti voi per il vostro sostegno e l’energia che ci date!
 <br/>
 <p>
 In this website you will find some items that we would be pleased to receive for our marriage and that will help us remember all the friends and relatives who accompanied us in this special day.
-</p><p>On this website you can choose what you would like to offer us. Once you have chosen, you can send us the corresponding amount through bank transfer. We will care of buying the item and make it sent to us in Brussels.
-</p><p>Here is how it works: in the list you can choose to offer us a present (the items with “Regalo”) or to contribute to a bigger purchase (the items with “Contributo”).
-</p><p>For presents, the amount is the price of the object. For contributions, you can choose how much you want to offer.
+</p><p>Through the main page you can reserve what you'd like to offer us. Once you have reserved, you can send us the corresponding amount through bank transfer. We will take care to buy the item and have it sent to us in Brussels.
+</p><p>Here's how it works: you can either choose to give us a present (the items with “Regalo”) or to contribute to a bigger purchase (the items with “Contributo”).
+</p><p>For the presents, the amount is fixed, and it is the full price of the object. For contributions, you can choose how much you want to offer.
 </p><p>
-If you choose a present (Regalo):
+How to book a present (Regalo):
 <ol>
 <li>Click on <b>“Regalo”</b> under the picture and description of the item</li>
 <li>Insert your personal data</li>
@@ -73,9 +73,9 @@ If you choose a present (Regalo):
 If you choose to contribute to a bigger purchase:
 <ol>
 <li>Click on <b>“Contributo”</b> (= contribution) under the picture and description of the item</li>
-<li>Say how much you want to offer and insert your personal data</li>
+<li>Insert the amount you'd like to offer together with your personal data</li>
 <li>Click on <b>“Invia”</b> (= send)</li>
-<li>Done. On the screen  you will find the details to make your bank transfer. You will also receive an e-mail with the same details, in case you prefer to make the bank transfer later.</li>
+<li>That's it. On the following screen you'll find the details to make your bank transfer. You will also receive an e-mail with the same details, in case you prefer to make the bank transfer later.</li>
 </ol>
 <br/>
 Should you have questions or need assistance, <a href="/public/contact">contact us</a>.

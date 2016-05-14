@@ -19,6 +19,13 @@
 
 <div class="container thumb"> 
 <div class="row">
+<div class="col-sm-12 text-center">
+  <p>
+  Per qualsiasi domanda o ulteriore informazione potete contattarci singolarmente ai seguenti indirizzi:
+  </p>
+  </div>  
+</div>
+<div class="row">
   <div class="col-sm-5 text-center">
   <h6>Carlo Umberto</h6>
   <p><img src="/imgs/mailcug.png" class="img-responsive" /></p>
@@ -32,7 +39,9 @@
 </div>
 <div class="row">
 <div class="col-sm-12 text-center">
+  <p>
   Oppure, potete scrivere alla mail associata a questo sito: mlcuwedding0903@gmail.com
+  </p>
   </div>  
 </div>
 </div>
