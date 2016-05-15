@@ -135,8 +135,8 @@ foreach ($donations as $donation)
 </div>
 <div class="row">
     <div class="col-sm-2">&nbsp;</div>
-    <div class="col-sm-8 thumb">Se non hai trovato un'idea che ti piace tra quelle proposte,
-    torna a visitare il sito tra un po': aggiungeremo altre proposte prossimamente!</div>
+    <div class="col-sm-8 thumb">Se non hai trovato qualcosa che ti piace,
+    torna a visitare il sito tra un po': aggiungeremo altre idee prossimamente!</div>
     <div class="col-sm-2">&nbsp;</div>
 </div>
 <br/>
