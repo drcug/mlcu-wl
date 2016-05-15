@@ -15,15 +15,20 @@
 
       <div class="modal-body">
         @include('common.errors')
+
                 <input type="hidden" name="gift_id" id="gift_id" id="donation-gift_id" class="form-control">
+                <div class="has-feedback">
                 <label for="donation-amount" class="col-sm-3 control-label">Contributo</label>
-                <input type="number" name="amount" id="donation-amount" class="form-control" required>
+                <input type="number" name="amount" id="donation-amount" class="form-control" required/>
+                <i class="glyphicon glyphicon-euro form-control-feedback"></i>
+                </div> 
                 <label for="donation-donor" class="col-sm-3 control-label">Il tuo nome</label>
-                <input type="text" name="donor" id="donation-donor" class="form-control" required>
+                <input type="text" name="donor" id="donation-donor" class="form-control" required/>
                  <label for="donation-email" class="col-sm-3 control-label">La tua email</label>
-                <input type="text" name="email" id="donation-email" class="form-control" required pattern=".+@.+\..{2,6}">
+                <input type="text" name="email" id="donation-email" class="form-control" required pattern=".+@.+\..{2,6}"/>
                 <label for="donation-comment" class="col-sm-3 control-label">Commento</label>
                 <textarea name="comment" id="donation-comment" class="form-control"> </textarea>
+                      
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>
