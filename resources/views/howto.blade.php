@@ -44,7 +44,7 @@ Se scegli di contribuire a un acquisto più importante:
 <li>Fatto. Sullo schermo troverai le coordinate per versare l’ammontare del tuo contributo sul nostro conto tramite bonifico bancario. Riceverai anche un’e-mail con le stesse informazioni, nel caso in cui tu preferisca effettuare il bonifico in un secondo momento.</li>
 </ol>
 <br/>
-Se hai domande o hai bisogno di assistenza, <a href="/public/contact">contattaci</a>.
+Se hai domande o hai bisogno di assistenza, <a href="{{ url('/contact') }}">contattaci</a>.
 </p>
 <p>
 Un grazie di cuore a tutti voi per il vostro sostegno e l’energia che ci date!
@@ -78,7 +78,7 @@ If you choose to contribute to a bigger purchase:
 <li>That's it. On the following screen you'll find the details to make your bank transfer. You will also receive an e-mail with the same details, in case you prefer to make the bank transfer later.</li>
 </ol>
 <br/>
-Should you have questions or need assistance, <a href="/public/contact">contact us</a>.
+Should you have questions or need assistance, <a href="{{ url('/contact') }}">contact us</a>.
 </p>
 <p>
 A big thank you for your support and the energy you give us!
