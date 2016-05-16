@@ -92,7 +92,7 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ url('/howto') }}">Come funziona</a></li>
+                        <li><a href="{{ url('/howto') }}">Come funziona - How it works</a></li>
                         <li><a href="{{ url('/contact') }}">Contatta gli sposi</a></li>
 
                 </ul>
