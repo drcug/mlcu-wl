@@ -40,7 +40,7 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <br/>
-  <p>Una mail ti è appena stata inviata a {{$donation->email}} con questi dati. Se non dovessi trovarla, cercala nella cartella "Posta Indesiderata".
+  <p>Un' e-mail ti è appena stata inviata a {{$donation->email}} con questi dati. Se non dovessi trovarla, cercala nella cartella "Posta Indesiderata".
   </p>
   <p>Hai ulteriori dubbi? Hai sbagliato da qualche parte e vorresti correggere? <a href="{{ url('/contact') }}">Contatta gli sposi!</a></p>
   <p>
