@@ -18,7 +18,7 @@
                 <input type="hidden" name="gift_id" id="gift_id" id="donation-gift_id" class="form-control">
                 <div class="has-feedback">
                 <label for="donation-amount" class="col-sm-3 control-label">Contributo</label>
-                <input type="number" name="amount" id="donation-amount" class="form-control" required/>
+                <input type="number" name="amount" id="donation-amount" min="1" class="form-control" required/>
                 <i class="glyphicon glyphicon-euro form-control-feedback"></i>
                 </div> 
                 <label for="donation-donor" class="col-sm-3 control-label">Il tuo nome</label>
