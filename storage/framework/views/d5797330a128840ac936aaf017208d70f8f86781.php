@@ -54,12 +54,34 @@
 <?php
 
  if ($count % 3 == 0) { echo "<div class=\"row\">"; }
-?>
+
+    $donations = $gift->donations;
+    $total = 0;
+    foreach ($donations as $donation)
+    {
+      $total += $donation->amount;
+    }
+  $percentage = ( $total / $gift->price ) * 100;
+  ?>
+  
 <div class="col-sm-4">
-    <div class="text-center thumb">
+    <div class="text-center thumb
+        <?php
+    if ($total >= $gift->price)
+    {
+    ?> gryout
+    <?php
+    } ?>">
 <h4><?php echo e($gift->name); ?></h4>
 <p align="center">
-  <img src="/imgs/gifts/<?php echo e($gift->photo); ?>" class="img-thumbnail img-responsive" style="height:235px"/>
+  <img src="/imgs/gifts/<?php echo e($gift->photo); ?>" class="img-thumbnail img-responsive
+    <?php
+    if ($total >= $gift->price)
+    {
+    ?> gryoutimg
+    <?php
+    } ?>
+    " style="height:235px"/>
 </p>
 <p>
   <?php echo e($gift->desc); ?> 
@@ -70,18 +92,8 @@
   <?php
      }
   ?>
-</p>
-
-<?php
-
-$donations = $gift->donations;
-$total = 0;
-foreach ($donations as $donation)
-{
-  $total += $donation->amount;
-}
-  $percentage = ( $total / $gift->price ) * 100;
-  ?>
+</p>  
+  
   <div class="progress progstatus">
     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="<?php echo e($total); ?>"
     aria-valuemin="0" aria-valuemax="<?php echo e($gift->price); ?>" style="width:<?php echo e($percentage); ?>%" >
@@ -125,7 +137,6 @@ foreach ($donations as $donation)
 </div>
 
 <?php
-
  if ($count % 3 == 2) { echo "</div>"; }
  $count++;
 ?>
